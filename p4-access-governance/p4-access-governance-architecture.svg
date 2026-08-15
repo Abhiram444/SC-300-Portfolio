@@ -1,0 +1,136 @@
+<svg width="100%" viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Project 4 access governance architecture</title>
+<desc>Four catalogs containing five access packages, with separation of duties between the two Finance packages, four certification campaigns above, and a revocation verification gap below.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<style>
+.t{font-family:sans-serif;font-size:14px;fill:#3d3d3a}
+.ts{font-family:sans-serif;font-size:12px;fill:#73726c}
+.th{font-family:sans-serif;font-size:14px;font-weight:500;fill:#3d3d3a}
+.arr{stroke:#73726c;stroke-width:1.5;fill:none}
+.leader{stroke:#73726c;stroke-width:0.5;stroke-dasharray:3 3;fill:none}
+.cat{fill:#E6F1FB;stroke:#185FA5}
+.cat-t{font-family:sans-serif;font-size:14px;font-weight:500;fill:#0C447C}
+.cat-s{font-family:sans-serif;font-size:12px;fill:#185FA5}
+.pkg{fill:#FAEEDA;stroke:#BA7517}
+.pkg-t{font-family:sans-serif;font-size:12px;font-weight:500;fill:#633806}
+.pkg-s{font-family:sans-serif;font-size:12px;fill:#854F0B}
+.camp{fill:#EEEDFE;stroke:#534AB7}
+.camp-t{font-family:sans-serif;font-size:12px;font-weight:500;fill:#3C3489}
+.camp-s{font-family:sans-serif;font-size:12px;fill:#534AB7}
+.gap{fill:#FCEBEB;stroke:#A32D2D}
+.gap-t{font-family:sans-serif;font-size:14px;font-weight:500;fill:#791F1F}
+.gap-s{font-family:sans-serif;font-size:12px;fill:#A32D2D}
+.sod{stroke:#D85A30;stroke-width:2;stroke-dasharray:6 4;fill:none}
+.sod-t{font-family:sans-serif;font-size:12px;font-weight:500;fill:#712B13}
+</style>
+</defs>
+
+<text class="th" x="40" y="34">Certification campaigns</text>
+
+<g>
+<rect class="camp" x="40" y="48" width="145" height="52" rx="8" stroke-width="0.5"/>
+<text class="camp-t" x="112" y="68" text-anchor="middle" dominant-baseline="central">Campaign A</text>
+<text class="camp-s" x="112" y="86" text-anchor="middle" dominant-baseline="central">Dept groups</text>
+</g>
+
+<g>
+<rect class="camp" x="200" y="48" width="145" height="52" rx="8" stroke-width="0.5"/>
+<text class="camp-t" x="272" y="68" text-anchor="middle" dominant-baseline="central">Campaign B</text>
+<text class="camp-s" x="272" y="86" text-anchor="middle" dominant-baseline="central">Privileged roles</text>
+</g>
+
+<g>
+<rect class="camp" x="360" y="48" width="145" height="52" rx="8" stroke-width="0.5"/>
+<text class="camp-t" x="432" y="68" text-anchor="middle" dominant-baseline="central">Campaign C</text>
+<text class="camp-s" x="432" y="86" text-anchor="middle" dominant-baseline="central">Access packages</text>
+</g>
+
+<g>
+<rect class="camp" x="520" y="48" width="120" height="52" rx="8" stroke-width="0.5"/>
+<text class="camp-t" x="580" y="68" text-anchor="middle" dominant-baseline="central">Campaign D</text>
+<text class="camp-s" x="580" y="86" text-anchor="middle" dominant-baseline="central">Guests</text>
+</g>
+
+<line x1="112" y1="100" x2="112" y2="140" class="arr" marker-end="url(#arrow)"/>
+<line x1="432" y1="100" x2="432" y2="140" class="arr" marker-end="url(#arrow)"/>
+<line x1="580" y1="100" x2="580" y2="140" class="arr" marker-end="url(#arrow)"/>
+
+<text class="th" x="40" y="164">Catalogs and access packages</text>
+
+<g>
+<rect class="cat" x="40" y="180" width="300" height="176" rx="12" stroke-width="0.5"/>
+<text class="cat-t" x="60" y="204" dominant-baseline="central">Finance Applications</text>
+<text class="cat-s" x="60" y="222" dominant-baseline="central">Internal only</text>
+</g>
+
+<g>
+<rect class="pkg" x="60" y="240" width="260" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="76" y="258" dominant-baseline="central">Finance - AP Analyst</text>
+<text class="pkg-s" x="76" y="274" dominant-baseline="central">Manager approval, 180 days</text>
+</g>
+
+<g>
+<rect class="pkg" x="60" y="298" width="260" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="76" y="316" dominant-baseline="central">Finance - AP Approver</text>
+<text class="pkg-s" x="76" y="332" dominant-baseline="central">Two-stage approval, 90 days</text>
+</g>
+
+<path class="sod" d="M330 263 L358 263 L358 321 L330 321"/>
+<text class="sod-t" x="368" y="292" dominant-baseline="central">SoD</text>
+
+<g>
+<rect class="cat" x="400" y="180" width="240" height="176" rx="12" stroke-width="0.5"/>
+<text class="cat-t" x="420" y="204" dominant-baseline="central">Engineering Tooling</text>
+<text class="cat-s" x="420" y="222" dominant-baseline="central">Delegated to eng lead</text>
+</g>
+
+<g>
+<rect class="pkg" x="420" y="240" width="200" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="436" y="258" dominant-baseline="central">Eng - Prod Read</text>
+<text class="pkg-s" x="436" y="274" dominant-baseline="central">Two policies, 365 days</text>
+</g>
+
+<g>
+<rect class="pkg" x="420" y="298" width="200" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="436" y="316" dominant-baseline="central">Eng - Prod Write</text>
+<text class="pkg-s" x="436" y="332" dominant-baseline="central">Two-stage, 30 days</text>
+</g>
+
+<g>
+<rect class="cat" x="40" y="376" width="300" height="118" rx="12" stroke-width="0.5"/>
+<text class="cat-t" x="60" y="400" dominant-baseline="central">Contractor Access</text>
+<text class="cat-s" x="60" y="418" dominant-baseline="central">External users enabled</text>
+</g>
+
+<g>
+<rect class="pkg" x="60" y="436" width="260" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="76" y="454" dominant-baseline="central">Contractor - Base</text>
+<text class="pkg-s" x="76" y="470" dominant-baseline="central">Sponsor approval, no extension</text>
+</g>
+
+<g>
+<rect class="cat" x="400" y="376" width="240" height="118" rx="12" stroke-width="0.5"/>
+<text class="cat-t" x="420" y="400" dominant-baseline="central">Elevated Access</text>
+<text class="cat-s" x="420" y="418" dominant-baseline="central">Security owned</text>
+</g>
+
+<g>
+<rect class="pkg" x="420" y="436" width="200" height="46" rx="6" stroke-width="0.5"/>
+<text class="pkg-t" x="436" y="454" dominant-baseline="central">Privileged groups</text>
+<text class="pkg-s" x="436" y="470" dominant-baseline="central">No birthright access</text>
+</g>
+
+<line x1="272" y1="100" x2="272" y2="140" class="arr" marker-end="url(#arrow)"/>
+
+<line x1="340" y1="514" x2="340" y2="556" class="arr" marker-end="url(#arrow)"/>
+
+<g>
+<rect class="gap" x="120" y="556" width="440" height="72" rx="8" stroke-width="0.5"/>
+<text class="gap-t" x="340" y="580" text-anchor="middle" dominant-baseline="central">Revocation verification</text>
+<text class="gap-s" x="340" y="602" text-anchor="middle" dominant-baseline="central">A recorded deny decision is not a revocation</text>
+</g>
+
+<text class="ts" x="40" y="666">SoD: dashed connector marks the incompatible package pair</text>
+<text class="ts" x="40" y="686">Campaign B uses no-change on non-response, the others remove access</text>
+</svg>
